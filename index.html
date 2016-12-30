@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="de">
+	<head>
+		<meta charset="utf-8"/>
+		<title>hansjakobwalter.de</title>
+		<link href="/main.css" rel="stylesheet" type="text/css"/>
+		<link href="https://dl.dropboxusercontent.com/u/6155575/content/unslider.css" rel="stylesheet">
+	</head>
+	<body>
+		<div id="header">
+		<h1><em>hans jakob </em>walter</h1>
+		<h2><em>architekturstudent.</em> berlin.<h2>
+		<p><em>contact: </em>mail(at)hansjakobwalter.de</p>
+		</div>
+		<div id="section">
+			<div class="default-slider">
+				<ul>
+					<li><img src="https://dl.dropboxusercontent.com/u/6155575/content/slide1.jpg"></li>
+					<li><img src="https://dl.dropboxusercontent.com/u/6155575/content/slide2.jpg"></li>
+					<li><img src="https://dl.dropboxusercontent.com/u/6155575/content/slide3.jpg"></li>
+					<li><img src="https://dl.dropboxusercontent.com/u/6155575/content/slide4.jpg"></li>
+					<li><img src="https://dl.dropboxusercontent.com/u/6155575/content/slide5.jpg"></li>
+					<li><img src="https://dl.dropboxusercontent.com/u/6155575/content/slide6.jpg"></li>
+				</ul>
+			</div>
+		</div>	
+		<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+		<script src="https://dl.dropboxusercontent.com/u/6155575/content/unslider.js"></script>
+		<script>
+			jQuery(document).ready(function($) {
+			var $slider = $('.default-slider').unslider();
+			$slider.on('mouseover', function() {
+				$slider.unslider('stop');
+			}).on('mouseout', function() {
+				$slider.unslider('start');
+			});
+			});
+		</script>
+	</body>
+</html>

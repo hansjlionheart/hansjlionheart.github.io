@@ -54,7 +54,9 @@ img {
 }
 }
 
-@media screen and (max-width: 720px){body{	width: 100%;
+@media screen and (max-width: 720px){
+body {
+	width: 100%;
 }
 
 #header {
@@ -62,9 +64,11 @@ img {
 	float:left;
 	margin: 19.6vw 0 0 12.2vw;
 }
-#section {
+
+#section {
 	height: 75vw;
-	width: 75vw;	margin: 10vh 25px 20px 12.2vw;
+	width: 75vw;
+	margin: 10vh 25px 20px 12.2vw;
 }
 
 img {
